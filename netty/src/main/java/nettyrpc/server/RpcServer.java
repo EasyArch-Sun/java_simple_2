@@ -11,7 +11,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class RpcServer {
     private static final int port=6666;
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
         MyRpcAnnotation.annotationHandler(ServiceImpl.class);
 
         EventLoopGroup bossgroup=new NioEventLoopGroup();
