@@ -1,6 +1,6 @@
 package nettyrpc.client;
 
-import nettyrpc.server.Service;
+import nettyrpc.client.Service;
 
 public class Controller {
 
@@ -17,11 +17,11 @@ public class Controller {
     }
 
 
-    public static void main(String[] args) {
-        Controller c=new Controller();
-        MyRpcAnnotation1.annotationHandler(c);
-        c.test();
-
-
-    }
+//    public static void main(String[] args) {
+//        Controller c=new Controller();
+//        MyRpcAnnotation1.annotationHandler(c);
+//        c.test();
+//
+//
+//    }
 }
