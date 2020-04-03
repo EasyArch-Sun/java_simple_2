@@ -12,6 +12,7 @@
         <module>netty</module>
         <module>webapp-test</module>
         <module>webapp_test</module>
+        <module>spring</module>
     </modules>
 
 
