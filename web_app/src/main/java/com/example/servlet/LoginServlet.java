@@ -24,6 +24,7 @@ public class LoginServlet extends HttpServlet {
 
         //查询用户名和密码是否在数据库中
 
+        resp.setCharacterEncoding("UTF-8");
         if(userSericeImp.findUserByNameAndPassword(username,password)==null){
             resp.getWriter().println("用户不存在或用户名密码错误");
         }
