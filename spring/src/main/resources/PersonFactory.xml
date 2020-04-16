@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="personFactory" class="com.easy.example.staticfactory.PersonFactory">
+    </bean>
+
+    <bean id="chinese" factory-bean="personFactory" factory-method="getPerson">
+        <constructor-arg value="chinese"/>
+    </bean>
+
+    <bean id="american" factory-bean="personFactory" factory-method="getPerson">
+        <constructor-arg value="american"/>
+    </bean>
+</beans>
